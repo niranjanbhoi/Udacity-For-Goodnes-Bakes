@@ -16,9 +16,3 @@ Upon clicking a recipe, the user is presented with a list of steps. The user can
 7. Fast Android Networking (Networking Library)
 8. Testing (JUnit 4 and Espresso Testing)
 
-### Screenshots
-<img src="https://github.com/kimycs/Udacity-For-Goodnes-Bakes/blob/master/docs/1.jpeg" width="270"><img src="https://github.com/kimycs/Udacity-For-Goodnes-Bakes/blob/master/docs/2.jpeg" width="270"><img src="https://github.com/kimycs/Udacity-For-Goodnes-Bakes/blob/master/docs/3.jpeg" width="270">
-
-<img src="https://github.com/kimycs/Udacity-For-Goodnes-Bakes/blob/master/docs/4.jpeg" width="270"><img src="https://github.com/kimycs/Udacity-For-Goodnes-Bakes/blob/master/docs/5.jpeg" width="270"><img src="https://github.com/kimycs/Udacity-For-Goodnes-Bakes/blob/master/docs/6.jpeg" width="270"> 
-
-
