@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_detail_activity_background"
+    android:id="@+id/recipe_detail_constraint_layout_phone"
+    tools:context=".detail.DetailActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:controller_layout_id="@layout/custom_playback_control"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/no_video_image_detail_iv"
+        android:visibility="gone"
+        android:src="@drawable/no_food_image"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/description_for_step_tv"
+        android:layout_margin="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+
+        app:layout_constraintTop_toBottomOf="@id/video_view"
+        app:layout_constraintStart_toStartOf="@id/video_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="64dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change step"
+        android:id="@+id/chnage_recipe_step_btn"
+        android:layout_margin="32dp"
+
+        android:src="@android:drawable/ic_media_next"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

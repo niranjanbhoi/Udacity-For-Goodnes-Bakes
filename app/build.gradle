@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.udafil.dhruvamsharma.bakingandroidapp"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        dataBinding {
+            enabled true
+        }
+
+        resValue 'string', 'package_name', android.defaultConfig.applicationId
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    /* Leak Canary for detecting leaks in the application */
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
+    // For support library fragments:
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1'
+
+    /* GSON */
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    /* ViewModel */
+    def lifecycle_version = "1.1.1"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    /* ExoPlayer */
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
+
+    /* Parceler */
+    implementation 'org.parceler:parceler-api:1.1.11'
+    annotationProcessor 'org.parceler:parceler:1.1.11'
+
+    /* Material Design Stepper */
+    implementation 'com.ernestoyaquello.stepperform:vertical-stepper-form:0.9.9'
+
+    /* Fast Android Networking Library */
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+    // https://mvnrepository.com/artifact/com.android.support.test.espresso/espresso-idling-resource
+    implementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'
+
+    // https://mvnrepository.com/artifact/com.android.support.test.espresso/espresso-contrib
+    implementation group: 'com.android.support.test.espresso', name: 'espresso-contrib', version: '3.0.2'
+
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+
+}

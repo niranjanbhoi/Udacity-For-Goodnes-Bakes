@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffaeb6</color>
+    <color name="colorPrimaryDark">#ffaeb6</color>
+<color name="colorAccent">#FF4081</color>
+
+<color name="ghostWhite">#FEFEFF</color>
+<color name="pattensBlue">#D8F3FC</color>
+<color name="lightBlue">#ADDAE6</color>
+<color name="poloBlue">#ffcdd2</color>
+
+<color name="transparent">@android:color/transparent</color>
+
+
+    </resources>

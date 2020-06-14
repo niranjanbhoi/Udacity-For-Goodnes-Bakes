@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/stepper_parent_layout_cl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".recipeDetail.RecipeDetailFragment">
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipe_detail_fragment_steps_rv"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_food_iv"
+        android:src="@drawable/no_food_graphic"
+        android:visibility="gone"/> -->
+
+
+
+        <ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout
+            android:id="@+id/vertical_stepper_form"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginLeft="8dp"
+        android:src="@android:drawable/ic_media_next"
+        app:backgroundTint="#ff1744"
+        app:layout_anchor="@id/bottom_layout"
+        app:layout_anchorGravity="top|end" />
+
+
+    <!-- Adding bottom sheet after main content -->
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/bottom_sheet"
+        tools:layout_marginBottom="8dp" />
+
+</android.support.design.widget.CoordinatorLayout>
